@@ -10,7 +10,7 @@ function App() {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  const BACKEND_URL = "http://localhost:5000"; 
+  const BACKEND_URL = "https://christianmatchchatapp-production.up.railway.app"; 
 
   const fetchMessages = async () => {
     const res = await fetch(`${BACKEND_URL}/message`);
